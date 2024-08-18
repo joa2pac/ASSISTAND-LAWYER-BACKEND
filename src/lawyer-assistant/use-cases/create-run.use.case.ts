@@ -7,7 +7,7 @@ interface Options {
 }
 
 export const createRunUseCase = async (openai: OpenAI, options: Options) => {
-  const { threadId, assistantId = 'asst_hblJDwbzjHOSqWqznQdPXBGg' } = options;
+  const { threadId, assistantId = 'asst_lqPjnjbQyDF6fL9VjYbE6D7B' } = options;
 
   const run = await openai.beta.threads.runs.create(threadId, {
     assistant_id: assistantId,
